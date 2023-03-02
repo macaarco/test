@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <fieldset>
+        <legend>Formulario de registro</legend>
+      <form action="">
+      
+      <h1>Formulario</h1>
+          <h2>Ingresa tus datos</h2>
+      
+          <label for="nombre">
+              Nombre
+          <input type="text" placeholder="Ingresa tu nombre" id="nombre">
+          </label>
+      <br>
+          <label for="apellido">
+              Apellido
+          <input type="text" placeholder="Ingresa tu apellido" id="apellido">
+          </label>
+      <br>
+          <label for="hobbies"></label>
+              Hobby
+              <select name="hobiies" id="hobbies">
+                <option value="-1">Selecciona tu hobby</option>
+                <option value="1">Leer</option>
+                <option value="2">Dormir</option>
+                <option value="3">Bailar</option>
+                <option value="4">Comer</option>
+                <option value="5">Nadar</option>
+                <option value="6">Viajar</option>
+                <option value="7">Ver series</option>
+                <option value="8">Cocinar</option>
+              </select>
+      <br>
+      <h2>Selecciona un hobby</h2>
+        <label for="viajar">
+        <input type="radio" id="viajar" name="hobby">Viajar
+        </label>
+      <br>
+        <label for="comer">
+        <input type="radio" id="comer" name="hobby">Comer
+        </label>
+      <br>
+        <label for="caminar">
+        <input type="radio" id="caminar" name="hobby">Caminar
+        </label>
+      <br>
+        <label for="dormir">
+        <input type="radio" id="dormir" name="hobby">Dormir
+        </label>
+      
+      <h2>¿Qué te gusta hacer el fin de semana?</h2>
+      <label for="series">
+        <input type="checkbox" id="series">Ver series
+      </label>
+      <br>
+      <label for="domicilio">
+        <input type="checkbox" id="domicilio">Pedir comida a domicilio
+      </label>
+      <br>
+      <label for="alarma">
+        <input type="checkbox" id="alarma">No poner alarma para despertar
+      </label>
+      <br><br>
+      
+      <label for="fecha">Ingrese fecha de nacimiento
+        <input type="date" id="fecha"
+               value="2022-10-15"
+               min="1997-01-01" max="2025-12-31"
+      </label>
+        <br><br>
+        
+      <label for="clave1">
+      <input type="password" id="clave1" placeholder="Ingrese la clave">
+        </label><br>
+        <label for="clave2">
+          <input type="password" id="clave2" placeholder="Confirme la clave">
+        </label><br><br>
+        
+        <h2>¿Cómo te sientes hoy?</h2>
+        <p>1 siendo lo más bajo y 5 lo más alto.</p>
+        
+        <input type="range" id="calificación" min="1" max="5" step="1"/>
+        <br><br>
+       
+        <h2>Elige un color</h2>
+        <input type="color" id="favcolor" name="favcolor"> 
+        <br><br>
+        
+         <h2>Adjunta un archivo</h2>
+        <input type="file" id="archivo" name="archivo"> 
+        <br><br>
+        
+        <h2>Búsqueda</h2>
+        <label for="gsearch">Search Google:</label>
+        <input type="search" id="gsearch" name="gsearch">
+         <br><br>
+        
+      <button>Enviar</button>
+      </form>
+      </fieldset>
+</body>
+</html>
